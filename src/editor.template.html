@@ -1,0 +1,14 @@
+<div class="editor-container">
+    <div ng-show="editor.isPreview" markdown="content" class="editor-content"></div>
+    <textarea ng-style="{'height':editor.rownums*20+14+'px'}" ng-hide="editor.isPreview" ng-model="content" name="editorContent" required ng-minlength="{{min}}" ng-maxlength="{{max}}"></textarea>
+    <div class="editor-toolbar">
+        <ul class="pull-left">
+            <li><a href="http://wowubuntu.com/markdown/" target="_blank"><i class="fa fa-question-circle fa-btn" title="查看markdown语法"></i></a></li>
+            <li action="preview"><i class="fa fa-btn" title="预览/取消预览" ng-class="{'fa-eye': !editor.isPreview, 'fa-eye-slash': editor.isPreview}"></i></li>
+            <li action="insertImg"><i class="fa fa-photo fa-btn" title="插入图片" ng-hide="editor.isPreview"></i></li>
+            <li action="insertLink"><i class="fa fa-link fa-btn" title="插入链接" ng-hide="editor.isPreview"></i></li>
+            <li action="insertCode"><i class="fa fa-code fa-btn" title="插入代码" ng-hide="editor.isPreview"></i></li>
+        </ul>
+        <button class="pull-right editor-submit btn" ng-if="needSubmit()" ng-click="submit()" ng-disabled="cannotSubmit()">评论一下</button>
+    </div>
+</div>

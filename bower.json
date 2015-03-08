@@ -1,0 +1,16 @@
+{
+  "name": "angular.markdown",
+  "version": "0.0.1",
+  "dependencies": {
+    "angular-sanitize": "~1.3.13",
+    "fontawesome": "~4.3.0",
+    "marked": "~0.3.3",
+    "angular": "latest",
+    "highlight": "latest",
+    "jquery": "*"
+  },
+  "devDependencies": {
+    "angular-mocks": "latest",
+    "jquery": "latest"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "node": true,//服务器端
+  "browser": true, //浏览器端,运行环境中会有该有的全局对象,如window
+  "esnext": true, //ECMAScript 6
+  "bitwise": true, //是否允许位运算
+  "camelcase": false,//变量名命名规范是否是驼峰式+全大写下划线连接
+  "curly": false,//代码块必须是否有大括号,如if(){}
+  "eqeqeq": true,//是否用'==='判断
+  "immed": false, //是否只能(function(){})()这样执行匿名函数
+  "indent": 2,//缩进
+  "latedef": true,//是否禁止在变量定义前使用变量
+  "newcap": true,//作为对象的函数名必须首字母大写
+  "noarg": true,//禁用匿名函数递归
+  "quotmark": "single",//强制使用单引号
+  "regexp": true,
+  "undef": true,//禁止使用未定义变量,如定义全局变量不用var会报错
+  "unused": false,//警告未使用的定义
+  "strict": true,//所有方法都是用ES 5 严格模式
+  "globalstrict": false,//全局严格模式,会破环第三方库
+  "trailing": true,
+  "smarttabs": true,
+  "predef": [
+    "$",
+    "angular",
+    "describe",
+    "beforeEach",
+    "afterEach",
+    "inject",
+    "it",
+    "marked",
+    "expect"
+  ]
+}
